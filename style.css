@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.image{
+    width: 15rem;
+    height:10rem;
+    margin-top: auto;
+    margin-left: 40rem;
+   display: flex;
+}
+#input_div{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#input_div .todo{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 400px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+#btn{
+    height: 70px;
+    width: 70px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: rgb(226, 161, 41);
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    transition: .5s;
+    cursor: pointer;
+}
+#btn:hover{
+    opacity: 0.7;
+}
+.container{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.task{
+    padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+.task span{
+    background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+.task button{
+    height: 50px;
+    width: 75px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: rgb(226, 161, 41);
+    color: #fff;
+    font-size: 1.15rem;
+    margin-left: 340px;
+    
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+   cursor: pointer;
+    
+}
+@media only screen and (max-width:700px){
+    .image{
+
+    width: 15rem;
+    height:10rem;
+    margin: auto;
+   
+    }
+   
+    #input_div .todo{
+       
+        height: 30px;
+       
+        width: 250px;
+        font-size: 1rem;
+       
+    }
+    #btn{
+        height: 50px;
+        width: 50px;
+       font-size: 1rem;
+    }
+    .container{
+        margin:10px;
+    }
+    .task{
+        height: 30px;
+       width: 300px;
+        font-size: 1rem;
+    }
+    
+    .task button{
+        height: 40px;
+        width: 40px;
+        margin-left:auto;
+        font-size: 1rem;
+    }
+    
+
+}
